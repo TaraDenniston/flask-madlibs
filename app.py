@@ -5,10 +5,14 @@ app = Flask(__name__)
 
 @app.route('/home')
 def story_form():
-    return render_template('home.html')
+    story = stories.story
+    return render_template('home.html', story=story)
 
 @app.route('/story')
 def display_story():
-    return render_template('story.html')
+    answers = dict(request.args)
+    text_story = stories.story.generate(answers)
+    return render_template('story.html', story=text_story)
+
 
 

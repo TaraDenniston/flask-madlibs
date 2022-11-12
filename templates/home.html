@@ -9,9 +9,11 @@
 <body>
     <h1>Madlibs</h1>
     <form action="/story">
-        <label for="place">place</label>
-        <input type="text" name="place">
-    </form>
-    
+        {% for prompt in story.prompts %}
+        <label for={{prompt}}>{{prompt}}</label>
+        <input type="text" name={{prompt}}><br>
+        {% endfor %}
+        <button>Submit</button>
+    </form>    
 </body>
 </html>
