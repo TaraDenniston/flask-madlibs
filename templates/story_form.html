@@ -3,7 +3,7 @@
 {% block title %}Story Form{% endblock %}
 
 {% block content %}
-<h1>Prompts for Story {{story_num}}</h1>
+<h1>Story Prompts</h1>
 <form action="/story">
     <input type="text" name="story" value={{story_num}} class="hidden">
     {% for prompt in story.prompts %}
