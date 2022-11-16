@@ -3,14 +3,14 @@
 {% block title %}Index{% endblock %}
 
 {% block content %}
-<h1>Madlibs</h1>
-<h3>Select a Story</h3>
+<h1 class="display-2 text-center mb-5">Madlibs</h1>
+<h3 mb-3>Select a Story</h3>
 <form action="/story-form">
-    <select name="story">
+    <select name="story" class="form-select form-select-lg mb-3">
         <option value="1">Letter from Camp</option>
         <option value="2">Sick Note</option>
         <option value="3">How to Wash Your Face</option>
     </select>
-    <button>Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 </form>
 {% endblock %}

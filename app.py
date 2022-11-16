@@ -26,7 +26,7 @@ story_list = [
         "horrible {plural_noun} and a fever of {number}. We have made "\
         "an appointment with Dr. {capitalized_sound}, who studied for "\
         "many years in {location}. He will send you all the information "\
-        "you need.\n\nSincerely,\nMrs. {capitalized_adjective}."
+        "you need.\n\nSincerely,\nMrs. {capitalized_adjective}"
     ),
 
     stories.Story(

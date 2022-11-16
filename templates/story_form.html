@@ -3,13 +3,15 @@
 {% block title %}Story Form{% endblock %}
 
 {% block content %}
-<h1>Story Prompts</h1>
+<h1 class="display-2 text-center mb-5">Story Prompts</h1>
 <form action="/story">
-    <input type="text" name="story" value={{story_num}} class="hidden">
+    <input type="text" name="story" value={{story_num}} hidden>
     {% for prompt in story.prompts %}
-    <label for={{prompt}}>{{prompt}}</label>
-    <input type="text" name={{prompt}}><br>
+    <div class="input-group mb-3">
+        <label class="input-group-text" for={{prompt}}>{{prompt}}</label>
+        <input class="form-control" type="text" name={{prompt}}><br>
+    </div>
     {% endfor %}
-    <button>Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 </form> 
 {% endblock %}

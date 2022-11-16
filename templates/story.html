@@ -3,7 +3,12 @@
 {% block title %}Story{% endblock %}
 
 {% block content %}
-<h1>Your Story</h1>
-<p style="white-space: pre-wrap">{{story}}</p>
-<h5>Source: <a href="https://www.madtakes.com/">https://www.madtakes.com/</a></h5>
+<h1 class="display-2 text-center mb-5">Your Story</h1>
+<div class="card p-3 mb-3">
+    <p class="card-text" style="white-space: pre-wrap; padding: 1em">{{story}}</p>
+</div>
+<h6 class="mb-4">Source: <a href="https://www.madtakes.com/">https://www.madtakes.com/</a></h5>
+<form action="/">
+    <button type="submit" class="btn btn-primary btn-lg">Try Another Story</button>
+</form>
 {% endblock %}
